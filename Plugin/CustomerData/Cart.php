@@ -45,7 +45,7 @@ class Cart
 			if($minOrderAmount != 0 && $minOrderAmount < $subtotalAmount){
 	        	$data['freeShippingMethod'] = __("You're eligible for Free Shipping");
 			}else{
-				$data['freeShippingMethod'] = __("You're %1 away from Free Shipping - %2", $minOrderAmount, $isFreeShipping);
+				$data['freeShippingMethod'] = __("You're %1 away from Free Shipping", $minOrderAmount);
 			}
         }else{
         	$data['isFreeShipping'] = 0;
