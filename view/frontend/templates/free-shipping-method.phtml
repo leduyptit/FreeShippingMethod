@@ -1,1 +1,18 @@
-<span>You're eligible for Free Shipping</span>
+<div data-bind="scope: 'koexample'">
+<!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "koexample": {
+                            "component": "Convert_FreeShippingMethod/js/koexample",
+            				"template": "Convert_FreeShippingMethod/example"
+                        }
+                    }
+                }
+            }
+        }
+</script> 
